@@ -1,0 +1,28 @@
+{
+  "name": "electron-php-app",
+  "version": "1.0.0",
+  "description": "PHP support for Electron to use for backend, MySQL etc.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/mufeedvh/electron-php-app",
+  "keywords": [
+    "electron",
+    "php",
+    "electron php",
+    "electron php mysql",
+    "electron php app",
+    "electron php server",
+    "electron phpstorm",
+    "electron php backend",
+    "electron php support",
+    "electron php api",
+    "php electron js"
+  ],
+  "author": "Mufeed VH",
+  "license": "MIT License",
+  "devDependencies": {
+    "electron": "^6.0.12"
+  }
+}

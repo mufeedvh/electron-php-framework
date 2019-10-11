@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Electron PHP Framework</title>
+    <script src="jquery.js"></script>
+    <script src="php-support.js"></script>
+  </head>
+  <body>
+    <h1>PHP Electron Framework v1.0.0</h1>
+    <p>[BETA]</p>
+
+    <!-- Execute a function in app.php -->
+    <div align="center">
+        <button onclick="phpDo('exampless')">Click</button>
+        <br><br>
+    </div>
+
+    <!-- Execute a function in app.php and pass any data to it -->
+    <div align="center">
+        <button onclick="phpDo('example', 'b r u h')">Click</button>
+        <br><br>
+    </div>
+
+    <!-- Execute a function in app.php and encode the data passed to it inorder to mitigate XSS -->
+    <div align="center">
+        <button onclick="phpDo('example', '<script>alert(document.domain);</script>', encode=true)">Click</button>
+        <br><br>
+    </div>  
+
+    <p id="output"></p>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
