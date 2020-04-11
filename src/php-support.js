@@ -1,11 +1,9 @@
-function phpDo(function_name, pass_data=0, encode=0) {
-    if (encode) {
-        pass_data = encodeURI(pass_data);
-    }
-    $.post("http://localhost:1337/php-support.php",
+function phpDo(function_name, pass_data=0, encode=false) {
+    $.post("http://localhost:1337/src/php-support.php",
     {
         function: function_name,
-        passed_data: pass_data
+        passed_data: pass_data,
+        encode_output: encode
     },
     function(data, status) {
         if (data == "func_dsnt_exist") {
