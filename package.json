@@ -24,5 +24,8 @@
   "license": "MIT License",
   "devDependencies": {
     "electron": "^6.0.12"
+  },
+  "dependencies": {
+    "minimist": "^1.2.5"
   }
 }
