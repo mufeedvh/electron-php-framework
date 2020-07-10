@@ -23,7 +23,7 @@
   "author": "Mufeed VH",
   "license": "MIT License",
   "devDependencies": {
-    "electron": "^6.0.12"
+    "electron": "^7.2.4"
   },
   "dependencies": {
     "minimist": "^1.2.5"
