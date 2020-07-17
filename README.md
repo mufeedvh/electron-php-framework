@@ -1,2 +1,3 @@
-# electron-php-framework
-beta test.
+# Electron PHP Framework
+
+This is just an experiment.
